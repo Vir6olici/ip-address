@@ -9,5 +9,12 @@ import { FormControl } from '@angular/forms';
 export class NavbarComponent {
 
   public ipAddressControl= new FormControl('')
-  
+
+  constructor(){
+
+  }
+
+  public getValue():void{
+    let value: string | null = this.ipAddressControl.value;
+  }
 }
