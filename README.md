@@ -40,3 +40,7 @@ cd new-app
 pentru a porni aplicatia se ruleaza comanda:
 
 npm start
+
+dupa clonarea proiectului pe masina locala trebuie rulata urmatoarea comanda
+
+npm install
