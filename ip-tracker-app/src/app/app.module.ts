@@ -5,12 +5,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { TableComponent } from './components/table/table.component';
+import { MapComponent } from './components/map/map.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    TableComponent
+    TableComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
