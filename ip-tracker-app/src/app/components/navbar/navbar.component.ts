@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { IpGeoLocationService } from 'src/app/services/ip-geo-location.service';
 
 @Component({
   selector: 'app-navbar',
@@ -10,11 +11,12 @@ export class NavbarComponent {
 
   public ipAddressControl= new FormControl('')
 
-  constructor(){
-
-  }
+  constructor(private ipGeoLocationService: IpGeoLocationService){ }
 
   public getValue():void{
     let value: string | null = this.ipAddressControl.value;
+    console.log(this.ipGeoLocationService.getGeoLocation().subscribe(value=>{
+      console.log(value);
+    }))
   }
 }
