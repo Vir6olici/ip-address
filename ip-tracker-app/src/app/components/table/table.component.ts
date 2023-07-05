@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { LocationStats } from '../entities/location';
 
 @Component({
   selector: 'app-table',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent {
-
+  
+  @Input() public locationStats: LocationStats;
 }
