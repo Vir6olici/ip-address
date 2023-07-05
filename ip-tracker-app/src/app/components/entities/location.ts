@@ -1,7 +1,6 @@
 export interface LocationStats {
-    ipAdress: string;
-    isp: string;
-    location: string;
-    timeZone: string;
-
+    ipAddress: string|null,
+    location: string,
+    timezone: string,
+    isp: string
 }

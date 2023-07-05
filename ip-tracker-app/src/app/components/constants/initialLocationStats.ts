@@ -1,8 +1,8 @@
 import { LocationStats } from "../entities/location";
 
 export const initialLocationStats: LocationStats={
-    ipAdress:'-',
-    timeZone:'-',
-    isp:'-',
-    location:'-'
+    ipAddress: '-',
+    timezone: '-',
+    location: '-',
+    isp: '-'
 }
